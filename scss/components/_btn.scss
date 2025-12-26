@@ -1,0 +1,17 @@
+.btn-rosa, .btn-negro {
+    @include tipografiaCuerpoPeso(0.8rem,400,normal,"IBM Plex Sans");
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+}
+
+.btn-rosa {
+    color: $colorRosa;
+}
+
+.btn-negro {
+    color: $colorNegro;
+}
+
+.btn-hover:hover {
+    font-weight: 700;
+}

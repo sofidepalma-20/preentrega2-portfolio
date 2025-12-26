@@ -1,356 +1,397 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    font-family: "IBM Plex Sans", sans-serif;
+.btn-rosa, .btn-negro, .nav-link, .about-destacado, .about-h2, .proyects-h1, .formulario label, .btn-form, .contacto-h2, .h-nota-card, .index-blog-h2, .index-main-h2, .index-header-pais, .index-header-h1 {
+  text-transform: uppercase;
 }
 
-:root {
-    --colorBeige: #F3EBE0;
-    --colorNegro: #1E1E1E;
-    --colorRosa: #FFC8C9;
-    --colorNaranja: #FF6D3A;
+.about-header, .about-main, .about-experience, .about-exhibitions, .proyects-header, .proyects-main, footer, #contacto, .index-blog, .index-main, .index-header {
+  padding: 1.5rem;
 }
 
-/* NAV-BAR */
-
-.bg-body-tertiary {
-    background-color: var(--colorNegro) !important;
+.btn-rosa, .btn-negro, .about-h2, .formulario label, .btn-form, .contacto-h2, .index-blog-h2, .index-main-h2, .index-header-pais {
+  letter-spacing: 0.1rem;
 }
-
-.nav-link {
-    color: var(--colorRosa);
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.10rem;
-}
-
-.nav-link:hover {
-    color: var(--colorNaranja);
-}
-
-.navbar-toggler {
-    background-color: var(--colorNaranja);
-}
-
-.logo {
-    height: 2.5rem;
-}
-
-/* INDEX HEADER */
 
 .index-header {
-    background-color: var(--colorNegro);
-    height: auto;
-    padding: 1.5rem;
-    border-bottom: 0.1rem solid var(--colorBeige);
+  background-color: #1E1E1E;
+  height: auto;
+  border-bottom: 0.1rem solid #F3EBE0;
 }
 
 .contenedor-index-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.index-header-h1, .proyects-h1 {
-    color: var(--colorBeige);
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 200;
-    margin-top: 1rem;
+.index-header-h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
+  margin-top: 1rem;
 }
 
 .index-header-h1 span {
-    border-bottom: 1px solid var(--colorNaranja);
+  border-bottom: 1px solid #FF6D3A;
 }
-
 .index-header-h1 span:hover {
-    color: var(--colorNaranja)
+  color: #FF6D3A;
 }
 
-.index-header-cargo, .about-cargo {
-    color: var(--colorBeige);
-    font-family: "Piazzolla", serif;
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 200;
-    line-height: 2.5rem;
-    letter-spacing: -0.10rem;
+.index-header-cargo {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Piazzolla";
+  color: #F3EBE0;
+  line-height: 2.5rem;
+  letter-spacing: -0.1rem;
 }
 
-.index-header-pais, .btn-rosa, .btn-negro {
-    color: var(--colorRosa);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.10rem;
+.index-header-pais {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #FFC8C9;
 }
 
 .index-header-img {
-    width: 95%;
-    max-width: 18rem;
+  width: 95%;
+  max-width: 18rem;
 }
-
-/* INDEX MAIN */
 
 .index-main {
-    background-color: var(--colorNegro);
-    padding: 1.5rem;
+  background-color: #1E1E1E;
 }
 
-.index-main-h2, .index-blog-h2, .contacto-h2, .about-h2 {
-    color: var(--colorBeige);
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.10rem;
+.index-main-h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
 }
 
-.proyect-img, .card-nota img {
-    width: 100%;
-    padding-top: 1rem;
+.proyect-img {
+  width: 100%;
+  padding-top: 1rem;
 }
 
-.h-proyect, .contacto-h5 {
-    color: var(--colorBeige);
-    font-family: "Piazzolla", serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
+.h-proyect {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Piazzolla";
+  color: #F3EBE0;
 }
 
-.proyect-list-area, footer ul {
-    padding: 0px;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+.proyect-list-area {
+  padding: 0px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-
-.btn-hover:hover {
-    font-weight: 700;
-}
-
-/*INDEX BLOG*/
 
 .index-blog {
-    background-color: var(--colorBeige);
-    padding: 1.5rem;
+  background-color: #F3EBE0;
 }
 
-.index-blog-h2, .btn-negro, .h-nota-card, .p-nota-card {
-    color: var(--colorNegro);
+.index-blog-h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
+}
+
+.index-blog-h2, .h-nota-card, .p-nota-card {
+  color: #1E1E1E;
 }
 
 .h-nota-card {
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  margin-top: 1rem;
 }
 
-.p-nota-card, .p-about {
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
+.p-nota-card {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
 }
 
-/* CONTACTO */
+.card-nota img {
+  width: 100%;
+  padding-top: 1rem;
+}
 
 #contacto {
-    background-color: var(--colorNaranja);
-    padding: 1.5rem;
+  background-color: #FF6D3A;
+}
+
+.contacto-h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
+}
+
+.contacto-h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Piazzolla";
+  color: #F3EBE0;
 }
 
 .formulario form {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .formulario label, .btn-form {
-    color: var(--colorBeige);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.10rem;
-    padding-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
+  padding-top: 1rem;
 }
 
 .btn-form {
-    width: fit-content;
+  width: fit-content;
 }
 
 #name, #email, #message, .btn-form {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--colorBeige);
-    padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #F3EBE0;
+  padding: 0.5rem;
 }
 
-/* FOOTER */
-
 footer {
-    background-color: var(--colorNegro);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
+  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-grande {
-    width: 6rem;
-    margin-bottom: 1rem;
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  padding: 0px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* PROYECTS */
-
 .proyects-header, .proyects-main {
-    background-color: var(--colorNegro);
-    padding: 1.5rem;
+  background-color: #1E1E1E;
+}
+
+.proyects-h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
+  margin-top: 1rem;
 }
 
 /* ABOUT */
-
 .about-header, .about-main, .about-experience, .about-exhibitions {
-    background-color: var(--colorNegro);
-    padding: 1.5rem;
+  background-color: #1E1E1E;
+}
+
+.about-cargo {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Piazzolla";
+  color: #F3EBE0;
+  line-height: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+
+.about-h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #F3EBE0;
 }
 
 .about-img {
-    width: 95%;
-    max-width: 18rem;
+  width: 95%;
+  max-width: 18rem;
 }
 
 .p-about {
-    color: var(--colorBeige);
+  color: #F3EBE0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
 }
 
 .about-destacado {
-    color: var(--colorRosa);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 200;
-    margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #FFC8C9;
+  margin-top: 1rem;
+}
+
+.bg-body-tertiary {
+  background-color: #1E1E1E !important;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  color: #FFC8C9;
+  letter-spacing: 0.1rem;
+}
+
+.nav-link:hover {
+  color: #FF6D3A;
+}
+
+.navbar-toggler {
+  background-color: #FF6D3A;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+.btn-rosa, .btn-negro {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+}
+
+.btn-rosa {
+  color: #FFC8C9;
+}
+
+.btn-negro {
+  color: #1E1E1E;
+}
+
+.btn-hover:hover {
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
-
-    .contenedor-index-header {
-        flex-direction: row;
-    }
-
-    .container-proyect {
-        display: flex;
-        gap: 2rem;
-        align-items: flex-end;
-    }
-
-    .contenedor-notas, .container-proyect-3 {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .contenedor-contacto {
-        display: flex;
-        align-items: baseline;
-        gap: 8rem;
-    }
-
-    .formulario {
-        width: 70%;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-
-    .contenedor-about-header {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .p-nota-card, .p-about {
-        font-size: 1rem;
-    }
-
-    .about-main section, .about-experience {
-        display: flex;
-        align-items: baseline;
-        gap: 2rem;
-    }
+  .contenedor-index-header {
+    flex-direction: row;
+  }
+  .container-proyect {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+  }
+  .contenedor-notas, .container-proyect-3 {
+    display: flex;
+    gap: 2rem;
+  }
+  .contenedor-contacto {
+    display: flex;
+    align-items: baseline;
+    gap: 8rem;
+  }
+  .formulario {
+    width: 70%;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .contenedor-about-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .p-nota-card, .p-about {
+    font-size: 1rem;
+  }
+  .about-main section, .about-experience {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+  }
 }
-
 @media (min-width: 992px) {
-    .index-header {
-        height: 100vh;
-    }
-
-    .contenedor-index-header {
-        justify-content: space-between;
-        height: 95vh;
-        padding-bottom: 4rem;
-    }
-
-    .index-header-h1, .proyects-h1 {
-        font-size: 4rem;
-    }
-
-    .index-header-cargo, .about-cargo {
-        font-size: 3rem;
-        line-height: 3.5rem;
-    }
-
-    .contenedor-index-header section {
-        width: 70%;
-    }
-
-    .index-main section, .index-blog section {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .contacto-h2 {
-        font-size: 3rem;
-    }
-
-    .contenedor-contacto, .about-main section, .about-experience {
-        gap: 13rem;
-    }
-
-    .formulario, .about-main div, .about-experience div {
-        width: 50%;
-    }
-
-    .about-cargo {
-        width: 65%;
-    }
+  .index-header {
+    height: 100vh;
+  }
+  .contenedor-index-header {
+    justify-content: space-between;
+    height: 95vh;
+    padding-bottom: 4rem;
+  }
+  .index-header-h1, .proyects-h1 {
+    font-size: 4rem;
+  }
+  .index-header-cargo, .about-cargo {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .contenedor-index-header section {
+    width: 70%;
+  }
+  .index-main section, .index-blog section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacto-h2 {
+    font-size: 3rem;
+  }
+  .contenedor-contacto, .about-main section, .about-experience {
+    gap: 13rem;
+  }
+  .formulario, .about-main div, .about-experience div {
+    width: 50%;
+  }
+  .about-cargo {
+    width: 65%;
+  }
 }
-
 @media (min-width: 1300px) {
-    .index-header-h1, .proyects-h1, .about-destacado {
-        font-size: 5rem;
-    }
-
-    .index-header-cargo, .about-cargo {
-        font-size: 4rem;
-        line-height: 4.5rem;
-    }
-
-    .index-header-img {
-        max-width: 25rem;
-    }
+  .index-header-h1, .proyects-h1, .about-destacado {
+    font-size: 5rem;
+  }
+  .index-header-cargo, .about-cargo {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .index-header-img {
+    max-width: 25rem;
+  }
 }
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+#contacto {
+    background-color: $colorNaranja;
+    @extend %paddingGeneral;
+}
+
+.contacto-h2 {
+    @include tipografiaCuerpoPeso(1.5rem,400,normal,"IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+}
+
+.contacto-h5 {
+    @include tipografiaCuerpoPeso(1.5rem,400,normal,"Piazzolla");
+    color: $colorBeige;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.formulario label, .btn-form {
+    @include tipografiaCuerpoPeso(0.8rem,400,normal,"IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+    padding-top: 1rem;
+}
+
+.btn-form {
+    width: fit-content;
+}
+
+#name, #email, #message, .btn-form {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $colorBeige;
+    padding: 0.5rem;
+}

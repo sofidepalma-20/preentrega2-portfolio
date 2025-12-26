@@ -1,0 +1,51 @@
+/* PROYECTS */
+
+.proyects-header, .proyects-main {
+    background-color: $colorNegro;
+    @extend %paddingGeneral;
+}
+
+.proyects-h1 {
+    @include tipografiaCuerpoPeso(3rem,200,normal,"IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    margin-top: 1rem;
+}
+
+/* ABOUT */
+
+.about-header, .about-main, .about-experience, .about-exhibitions {
+    background-color: $colorNegro;
+    @extend %paddingGeneral;
+}
+
+.about-cargo {
+    @include tipografiaCuerpoPeso(2rem,200,italic,"Piazzolla");
+    color: $colorBeige;
+    line-height: 2.5rem;
+    letter-spacing: -0.10rem;
+}
+
+.about-h2 {
+    @include tipografiaCuerpoPeso(1.5rem,400,normal,"IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+}
+
+.about-img {
+    width: 95%;
+    max-width: 18rem;
+}
+
+.p-about {
+    color: $colorBeige;
+    @include tipografiaCuerpoPeso(0.8rem,400,normal,"IBM Plex Sans");
+}
+
+.about-destacado {
+    @include tipografiaCuerpoPeso(2rem,200,normal,"IBM Plex Sans");
+    color: $colorRosa;
+    @extend %mayuscula;
+    margin-top: 1rem;
+}

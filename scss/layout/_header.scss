@@ -1,0 +1,47 @@
+.index-header {
+    background-color: $colorNegro;
+    height: auto;
+    @extend %paddingGeneral;
+    border-bottom: 0.1rem solid $colorBeige;
+}
+
+.contenedor-index-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-header-h1 {
+    @include tipografiaCuerpoPeso(3rem, 200, normal, "IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    margin-top: 1rem;
+}
+
+.index-header-h1 span {
+    border-bottom: 1px solid $colorNaranja;
+
+    &:hover {
+        color: $colorNaranja
+    }
+}
+
+.index-header-cargo {
+    @include tipografiaCuerpoPeso(2rem, 200, italic, "Piazzolla");
+    color: $colorBeige;
+    line-height: 2.5rem;
+    letter-spacing: -0.10rem;
+}
+
+.index-header-pais {
+    @include tipografiaCuerpoPeso(0.8rem, 400, normal, "IBM Plex Sans");
+    color: $colorRosa;
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+}
+
+.index-header-img {
+    width: 95%;
+    max-width: 18rem;
+}

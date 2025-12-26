@@ -1,0 +1,29 @@
+.index-main {
+    background-color: $colorNegro;
+    @extend %paddingGeneral;
+}
+
+.index-main-h2 {
+    @include tipografiaCuerpoPeso(1.5rem,400,normal,"IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+}
+
+.proyect-img {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.h-proyect {
+    @include tipografiaCuerpoPeso(1.5rem,400,normal,"Piazzolla");
+    color: $colorBeige;
+}
+
+.proyect-list-area {
+    padding: 0px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+

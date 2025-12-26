@@ -1,0 +1,6 @@
+@mixin tipografiaCuerpoPeso ($fs,$fw,$fst,$ff){
+    font-size: $fs;
+    font-weight: $fw;
+    font-style: $fst;
+    font-family: $ff;
+}

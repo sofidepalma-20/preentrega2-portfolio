@@ -1,0 +1,21 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/extends";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/blog";
+@import "./layout/contacto";
+@import "./layout/footer";
+@import "./layout/pages";
+@import "./components/navbar";
+@import "./components/btn";
+@import "./mq/mq";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}

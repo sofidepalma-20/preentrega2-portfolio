@@ -1,0 +1,22 @@
+.bg-body-tertiary {
+    background-color: $colorNegro !important;
+}
+
+.nav-link {
+    @include tipografiaCuerpoPeso(1rem,400,normal,"IBM Plex Sans");
+    @extend %mayuscula;
+    color: $colorRosa;
+    letter-spacing: 0.10rem;
+}
+
+.nav-link:hover {
+    color: $colorNaranja;
+}
+
+.navbar-toggler {
+    background-color: $colorNaranja;
+}
+
+.logo {
+    height: 2.5rem;
+}

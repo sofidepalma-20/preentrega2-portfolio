@@ -1,0 +1,30 @@
+.index-blog {
+    background-color: $colorBeige;
+    @extend %paddingGeneral;
+}
+
+.index-blog-h2 {
+    @include tipografiaCuerpoPeso(1.5rem,400,normal,"IBM Plex Sans");
+    color: $colorBeige;
+    @extend %mayuscula;
+    @extend %interletradoMayuscula;
+}
+
+.index-blog-h2, .h-nota-card, .p-nota-card {
+    color: $colorNegro;
+}
+
+.h-nota-card {
+    @include tipografiaCuerpoPeso(1.2rem,600,normal,"IBM Plex Sans");
+    @extend %mayuscula;
+    margin-top: 1rem;
+}
+
+.p-nota-card {
+    @include tipografiaCuerpoPeso(0.8rem,400,normal,"IBM Plex Sans");
+}
+
+.card-nota img {
+    width: 100%;
+    padding-top: 1rem;
+}
